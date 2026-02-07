@@ -33,3 +33,10 @@ public:
 
 // Time Complexity: O(n² · 2ⁿ)
 
+// Cost of this insert:
+// Comparing vectors in a set takes O(k), where k = size of the vector.
+// Set insert takes O(log M), where M = number of unique combinations.
+
+// In the worst case, the number of combinations can be exponential.
+// So, each insert ≈ O(k · log(2ⁿ)) = O(k · n).
+// And this happens for many nodes.
